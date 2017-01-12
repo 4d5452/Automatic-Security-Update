@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic update of security updates
+
+[Service]
+Type=simple
+Nice=19
+IOSchedulingClass=2
+IOSchedulingPriority=7
+ExecStart=$PATH_TO_SCRIPT
