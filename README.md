@@ -20,22 +20,13 @@ expensive updates may be required if service privileges are not properly set.
 sudo systemctl enable sec-update.timer</p>
 
 #5: More stuff...
-<p>Check the status of the service:
-'
-sudo systemctl status sec-update.timer
-'
-
-List all timers:
-'
-systemctl list-timers -all
-'
-
-Reload services
-'
-sudo systemctl daemon-reload
-'
-
-Check output of service
-'
-sudo journalctl -u sec-update --since="yesterday"
-'</p>
+<dl>
+<dt>Check the status of the service</dt>
+<dd>sudo systemctl status sec-update.timer</dd>
+<dt>List all timers</dt>
+<dd>systemctl list-timers -all</dd>
+<dt>Reload services</dt>
+<dd>sudo systemctl daemon-reload</dd>
+<dt>Check output of service</dt>
+<dd>sudo journalctl -u sec-update --since="yesterday"</dd>
+</dl>
